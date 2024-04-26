@@ -11,7 +11,7 @@ app = Flask(__name__)
 model = pickle.load(open("svm_clf.pkl", "rb"))
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-app.template_folder = 'D:/template/template'
+app.template_folder = 'template'
 
 
 @app.route('/')
